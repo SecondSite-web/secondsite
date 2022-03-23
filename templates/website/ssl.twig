@@ -1,0 +1,134 @@
+{% extends 'index.twig' %}
+
+{% block head %}{% endblock head %}
+
+{% block body %}
+    <div class="container bg-white mt-5">
+        <div class="row">
+            <div class="col">
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 no-gutter custom-border">
+                <div class="well">
+                    <div class="text-white bg-danger p-2 text-center">
+                        <h4>Domain Validation (DV)</h4>
+                    </div>
+                    <div class="SSL-image">
+                        <img class="img-fluid" src="{{ site.url }}images/SSL-dv-icon.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <h5 class="text-danger">Basic Security</h5>
+                        <p>Issued in minutes, ideal for blogs, social media & personal websites</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-gutter custom-border">
+                <div class="well">
+                    <div class="text-white bg-danger p-2 text-center">
+                        <h4>Organization Validation (OV)</h4>
+                    </div>
+                    <div class="SSL-image">
+                        <img class="img-fluid" src="{{ site.url }}images/SSL-ov-icon.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <h5 class="text-danger">Strong business level SSL</h5>
+                        <p>Company identity included in certificate, ideal for business websites</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 no-gutter custom-border">
+                <div class="well">
+                    <div class="text-white bg-danger p-2 text-center">
+                        <h4>Extended Validation (EV)</h4>
+                    </div>
+                    <div class="SSL-image">
+                        <img class="img-fluid" src="{{ site.url }}images/SSL-ev-icon.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <h5 class="text-danger">Maximum Protection & Trust</h5>
+                        <p>Green address bar & company name displayed, ideal for ecommerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-white">
+        <div id="block-one">
+            <h4 class="text-danger">What is an SSL Certificate?</h4>
+            <p>An SSL Certificate on a website offers a layer of security that protects your site and prevents the stealing of your customers personal information entered on the site. Google has recently announced that SSL will be used a factor in deciding page rank and in future would like it to become a standard on all web sites.
+                Research shows that customers are more likely to trust and buy from a website that has an SSL certificate.</p>
+
+            <p>SSL Certificates enable data encryption on the internet and allow data to be transmitted securely from a web server to a browser. With SSL, your website can use the https protocol and will display a padlock in end users web browsers to indicate the connection is secure.</p>
+
+            <p>Although all SSL certificates use similar methods to protect and validate your data, the level of trust and assertion they provide varies. Standard SSL (Domain Validated) Certificates are the easiest and most common type of SSL certificate. OV and EV Certificates also authenticate the identity of the company or organization that holds the certificate providing more trust to end users.</p>
+
+            <p>EV Certificates offer the highest level of validation and trust, and will show the name of the company or organization in green in the address bar. This is an immediate, visual way that viewers can know that extra steps were taken to confirm the site they’re visiting – which is why most large companies and organizations choose EV certificates.</p>
+        </div>
+        <div id="block-two">
+            <h4 class="text-danger">Why do I need an SSL Certificate?</h4>
+
+            <p>SSL Certificates are an essential part of the internet. They not only encrypt communication between your computer and the server where a website is located, but they also provide verification that a site is what it claims to be.</p>
+        </div>
+        <div id="block-three">
+            <h4 class="text-danger">What are the different types of SSL?</h4>
+
+            <p>There are 3 different levels of vetting that SSL Certificates are based upon. Domain Validated (DV) , Organization Validated (OV), and Extended Validation (EV). The major difference between the types of certificate relates to the information the Certificate Authority, RapidSSL, GeoTrust and Symantec, requires and
+                validates in order to issue a certificate. The higher levels of certificate require more information, and often is displayed in the browser bar. EV SSL for example turns the browser bar green and displays the organization name to visitors to generate more trust.</p>
+        </div>
+        <div id="block-four">
+            <div class="row">
+                <div class="col-md-6 no-gutter custom-border">
+                    <div class="well">
+                        <h4 class="text-white bg-danger p-3">What is Standard DV SSL?</h4>
+                    </div>
+                    <div class="col-content p-3">
+                        <p>Domain Validation certificates offer an economical and quick way to implement SSL to your website. Domain Validated certificates verify you own the domain, but do not perform any additional organization level validation.</p>
+                        <p>Domain Validated certificates are ideal for personal websites, blogs and social media, or any sites that are not transmitting private and confidential information. A Domain Validated certificate activates the browser padlock and enables the use of https to assure your website visitors and customers that you take their privacy seriously.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 no-gutter custom-border">
+                    <div class="well">
+                        <h4 class="text-white bg-danger p-3">What is Organization Validation SSL?</h4>
+                    </div>
+                    <div class="col-content p-3">
+                        <p>Organization Validated SSL Certificates provide instant identity confirmation and strong SSL protection for your website and business.</p>
+                        <p>OV SSL is an organization validated certificate that gives your website a step up in credibility over domain validated SSL Certificates. It activates the browser padlock and https, shows your corporate identity, and assures your customers that you take security very seriously. Site visitors can verify that the website is operated by a legitimate company and is not an imposter site.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 no-gutter custom-border">
+                    <div class="well">
+                        <h4 class="text-white bg-danger p-3">What is Extended Validation SSL?</h4>
+                    </div>
+                    <div class="col-content p-3">
+                        <p>EV SSL is an Extended Validation Certificate, the highest class of SSL available today and gives more credibility and trust to your website compared to using an organization or domain validated SSL Certificate.</p>
+                        <p>Extended Validation SSL activates the green address bar and displays your company or organization name in the browser address bar. These prominent visual security indicators let visitors know that extra steps were taken to confirm the site they're visiting, increasing user trust in your website and its credibility – this is why most large companies and organizations choose EV certificates.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 no-gutter custom-border">
+                    <div class="well">
+                        <h4 class="text-white bg-danger p-3">What is a Wildcard SSL Certificate?</h4>
+                    </div>
+                    <div class="col-content p-3">
+                        <p>Wildcard SSL allows you to secure an unlimited number of subdomains on a single certificate. It’s a great solution for anyone who hosts or manages multiple sites or pages that exist on the same domain. The one-time cost of the certificate covers you for additional subdomains you may add in the future.</p>
+                        <p>Unlike a standard SSL Certificate that is issued to a single Fully Qualified Domain Name only, e.g. www.yourdomain.com, which means it can only be used to secure the exact domain to which it has been issued, a Wildcard SSL Certificate is issued to *.yourdomain.com, where the asterisk represents all possible subdomains.</p>
+                        <p>Wildcard SSL is an option available for DV and OV SSL Certificates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <br />
+                <p>We only sell SSL certificates from the most trusted brands in Online Web Security and include a free "domain level" SSL certificate with every website that we build and host, this should tell you how much we believe in using SSL. This basic SSL may not be enough for your business needs, <a href="{{ site.url }}contact-us/">contact us</a> to find out more about SSL and how we can help you.</p>
+                <br/>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block scripts %}{% endblock scripts %}

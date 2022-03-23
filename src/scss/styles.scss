@@ -1,0 +1,32 @@
+/*!
+ * Font Awesome
+ * Bootstrap
+ * Bootswatch Themes
+ * Custom Styles
+ * SB Admin 2 by Blackrock Studios
+ * Tempus Dominus Time Picker
+ */
+
+// please maintain this order - chaging the order will result in undesired results
+
+// 1. Font Awesome // //
+@import "../../vendor/fontawesome-free/css/all";
+
+// 2. Bootstrap variables.scss file for Overrides (if you want to use a custom variables.scss - copy from vendor) // //
+@import "../../vendor/bootstrap/scss/_functions.scss";
+@import "_custom/variables";
+
+// 3. optional bootswatch theme file - vendor/bootswatch (use 5. in combo with this) // //
+// @import "../../vendor/bootswatch/cerulean/_variables.scss";
+
+// 4. Bootstrap SCSS (can be modified in './vendor' // //
+@import "../../vendor/bootstrap/scss/bootstrap.scss";
+
+// 5. optional bootswatch theme file - vendor/bootswatch
+// @import "../../vendor/bootswatch/cerulean/_bootswatch.scss";
+
+// 6. optional animate.css lib for animated effects (Can be modified in './node_modules' with npm and gulp before import to './vendor')
+@import "../../vendor/animate/animate";
+
+// 7. custom styles from '.src/_custom folder'
+@import "custom";

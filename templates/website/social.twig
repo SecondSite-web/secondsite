@@ -1,0 +1,70 @@
+<br />
+<div class="container social">
+    <div class="row">
+        <div class="col">
+            <div class="rrssb">
+                <div class="rrssb-prefix">Share this page</div>
+                <ul class="rrssb-buttons">
+                    <li class="rrssb-email">
+                        <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
+                        <a href="mailto:?subject={{ subject|e }}&amp;body={{ encodedpageurl|e }}">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">email</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-facebook">
+                        <!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header:
+                              https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ cleanpageurl|e }}" class="popup">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">facebook</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-instagram">
+                        <!-- Replace href with your URL  -->
+                        <a href="{{ instagramurl|e }}" class="popup">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">instagram</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-linkedin">
+                        <!-- Replace href with your meta and URL information -->
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ cleanpageurl|e }}&amp;title={{ subject|e }}&amp;summary={{ summary|e }}" class="popup">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">linkedin</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-twitter">
+                        <!-- Replace href with your Meta and URL information  -->
+                        <a href="https://twitter.com/intent/tweet/?text={{ summary|e }}&url={{ encodedpageurl|e }}&via=secondsitesa" class="popup">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">twitter</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-googleplus">
+                        <!-- Replace href with your meta and URL information.  -->
+                        <a href="https://plus.google.com/share?url={{ cleanpageurl|e }}" class="popup">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">google+</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-pinterest">
+                        <!-- Replace href with your meta and URL information.  -->
+                        <a href="http://pinterest.com/pin/create/button/?url={{ cleanpageurl|e }}&amp;media={{ OgSiteImageUrl|e }}&amp;description={{ summary|e }}" class="popup">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">pinterest</span>
+                        </a>
+                    </li>
+                    <li class="rrssb-whatsapp">
+                        <a href="whatsapp://send?text={{ summary|e }}%3A%20{{ pageurl|e }}%20%7C%20{{ facebookimg|e }}" data-action="share/whatsapp/share">
+                            <span class="rrssb-icon"></span>
+                            <span class="rrssb-text">Whatsapp</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Buttons end here -->
+            </div>
+        </div>
+    </div>
+
+</div>

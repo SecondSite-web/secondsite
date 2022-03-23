@@ -1,0 +1,13 @@
+{% extends 'user_index.twig' %}
+    {% block body %}
+        <form id="reset-request-form" class="user" action="{{ site.admin }}php/reset-request.php" method="post" role="form" data-toggle="validator">
+            <div class="messages"></div>
+            <div class="form-group">
+                <input type="email" class="form-control form-control-user" id="email" name="email" placeholder="email@address.com" required="required">
+            </div>
+            <button type="submit" id="submit" class="btn btn-success btn-send">Submit</button>
+        </form>
+    {% endblock %}
+    {% block scripts %}
+        <script type="text/javascript" src="{{ site.admin }}js/reset-request.min.js"></script>
+    {% endblock %}

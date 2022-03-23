@@ -1,0 +1,16 @@
+.detail-label {
+  display: table-cell;
+  min-width: 150px;
+}
+.detail-value {
+  display: table-cell;
+  min-width: 150px;
+  color: $danger;
+}
+.detail-value a i, .detail-value a {
+  color: $danger;
+}
+
+#platform-icons i {
+  color: $gray-200;
+}

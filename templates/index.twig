@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-ZA" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>{{ page.title }}</title>
+
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="image" content="{{ page.pic }}" />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="{{ page.url }}" />
+
+        <meta property="og:locale" content="en_ZA" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{{ page.title }} - {{ site.name }}" />
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta property="og:url" content="{{ page.url }}" />
+        <meta property="og:site_name" content="{{ site.name }}" />
+        <meta property="og:image" content="{{ page.pic }}" />
+        <meta property="og:image:alt" content="{{ page.title }}" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="fb:app_id" content="461996124627453" />
+        <meta property="fb:admins" content="461996124627453" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{{ page.title }} - {{ site.name }}" />
+        <meta name="twitter:description" content="{{ page.description }}" />
+        <meta name="twitter:image" content="{{ page.pic }}" />
+        <meta name="twitter:image:alt" content="{{ page.description }}" />
+
+        <meta name="DC.title" content="Sir Lowry's Pass" />
+        <meta name="geo.region" content="ZA-WC" />
+        <meta name="geo.placename" content="Sir Lowry's Pass" />
+        <meta name="geo.position" content="-34.140307;18.895935" />
+        <meta name="ICBM" content="-34.140307, 18.895935" />
+        <!-- Site Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}favicon-16x16.png" />
+        <link rel="manifest" href="{{site.url}}manifest.json" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="msapplication-TileImage" content="{{ site.url }}mstile-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="author" href="{{ site.url }}humans.txt" />
+
+        {# include your site.manifest link here with icon links for favicons #}
+        {# include schema.org structured data json meta here for SEO #}
+        <link rel='dns-prefetch' href='//code.jquery.com' />
+        <link rel="stylesheet" href="{{ site.url }}css/styles.min.css">
+
+
+        {% block head %}{% endblock head %}
+    </head>
+
+    <body class="page-{{page.class}}">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    {% include 'navbar.twig' %}
+    <section id="page-header" class="hidden gone">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center text-danger">
+                        <h1 class="redheading">{{ page.title }}</h1>
+                        <p class="black-text">{{ page.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-wrapper">
+    {% block body %}{% endblock body %}
+    </div>
+    {% include 'footer.twig' %}
+        {# for Production use
+        <script type="text/javascript" src="{{ site.url }}js/main.js"></script>
+        End for Production Use #}
+
+        {# for Development #}
+        <script type="text/javascript" src="{{ site.url }}vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ site.url }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="{{ site.url }}vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="{{ site.url }}js/contact.min.js"></script>
+        <script type="text/javascript" src="{{ site.url }}js/login.min.js"></script>
+        <script type="text/javascript" src="{{ site.url }}js/custom.min.js"></script>
+        {# end for Development #}
+        {% block scripts %}{% endblock scripts %} {# for extra one page only scripts #}
+    </body>
+</html>

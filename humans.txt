@@ -1,0 +1,30 @@
+/* TEAM */
+
+Your title: Gregory Schoeman
+
+Site: info@secondsite.xyz
+
+Twitter: @secondsitesa
+
+Location: Cape Town, South Africa
+
+
+/* THANKS */
+
+Name: Aidan Harper
+
+
+/* SITE */
+
+Last update: 2017/10/26
+
+Standards: HTML5, CSS3, JS, PHP7.1
+
+Components: Modernizr, jQuery, Bootstrap4, Twig
+
+Software: PHPStorm, Xampp, Photoshop, Colorpicker, Firefox Developer Edition, SublimeTxt, FileZilla
+       
+                            
+
+
+                    

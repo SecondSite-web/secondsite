@@ -1,0 +1,26 @@
+// Main Page
+
+#summary-head {
+  margin-left:-15px;
+  margin-right:-15px;
+}
+#summary .card {
+  min-height: 238px;
+}
+.carousel-item h5, .carousel-item p {
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+.carousel-item img {
+  min-height:451px;
+}
+.page-home .scroll-animations {
+  animation-duration: 2s;
+  visibility: hidden;
+}
+.page-home .scroll-animations .animated {
+  animation-duration: 2s;
+}
+#card-2.animated, #card-4.animated, #contact.animated {
+  animation-delay: 0.5s;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="{{ site.name }} - {{ page.title }}" />
+    <meta name="author" content="SecondSite.xyz" />
+    <meta name="robots" content="noindex, nofollow" />
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+    <title>{{ site.name }} - {{ page.title }}</title>
+    <link href="{{ site.admin }}css/admin.min.css" rel="stylesheet" />
+    {% block head %}
+
+    {% endblock %}
+  </head>
+  <body class="bg-gradient-primary {{ page.class }}">
+      <div class="container">
+          <div class="card o-hidden border-0 shadow-lg my-5">
+              <div class="card-body p-0">
+                  <div class="row">
+                      <div class="col-lg-5 d-none d-lg-block"></div>
+                      <div class="col-lg-7">
+                          <div class="p-5">
+                              <div class="text-center">
+                                  <h1 class="h4 text-gray-900 mb-4">{{ page.title }}</h1>
+                              </div>
+                              <div class="main" style="min-height:240px;">
+                                {% block body %}{% endblock %}
+                              </div>
+                              <hr>
+                              <div class="text-center">
+                                  <a class="small" href="{{ site.admin }}reset-request.php">Forgot Password?</a>
+                              </div>
+                              <div class="text-center">
+                                  <a class="small" href="{{ site.admin }}login.php">Login Here!</a>
+                              </div>
+                              {% if site.allowRegister == '1' %}
+                              <div class="text-center">
+                                  <a class="small" href="{{ site.admin }}register.php">Register a new account</a>
+                              </div>
+                              {% endif %}
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="{{ site.url }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="{{ site.url }}vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script type="text/javascript" src="{{ site.url }}vendor/jquery-validation/jquery.validate.min.js"></script>
+      {% block scripts %}{% endblock %}
+  </body>
+</html>

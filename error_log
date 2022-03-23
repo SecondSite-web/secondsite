@@ -1,0 +1,2 @@
+[10-Mar-2020 08:04:54 Africa/Johannesburg] PHP Warning:  require(/home/thirdeye/public_html/vendor/composer/../wixel/gump/gump.class.php): failed to open stream: No such file or directory in /home/thirdeye/public_html/vendor/composer/autoload_real.php on line 66
+[10-Mar-2020 08:04:54 Africa/Johannesburg] PHP Fatal error:  require(): Failed opening required '/home/thirdeye/public_html/vendor/composer/../wixel/gump/gump.class.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/thirdeye/public_html/vendor/composer/autoload_real.php on line 66

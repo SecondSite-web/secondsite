@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- Search Engine -->
+		<title>{{ pagetitle }}</title>
+		<meta name="description" content="{{ PageDescription }}" />
+		<meta name="robots" content="index, follow" />
+		<meta name="image" content="{{ SiteImageUrl }}" />
+		<!-- Schema.org for Google -->
+		<meta itemprop="name" content="{{ pagetitle }}" />
+		<meta itemprop="description" content="{{ PageDescription }}" />
+		<meta itemprop="image" content="{{ SiteImageUrl }}" />
+		<meta name="google" content="nositelinkssearchbox" />
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="{{ pagetitle }}" />
+		<meta name="twitter:description" content="{{ PageDescription }}" />
+		<meta name="twitter:site" content="{{ publisher }}" />
+		<meta name="twitter:creator" content="{{ author }}" />
+		<meta name="twitter:image" content="{{ SiteTwitterImage }}" />
+		<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:type" content="website" />
+        <meta name="og:title" content="{{ pagetitle }}" />
+		<meta name="og:description" content="{{ ogdescription }}" />
+		<meta name="og:image" content="{{ OgSiteImageUrl }}" />
+		<meta name="og:url" content="{{ siteurl }}" />
+		<meta name="og:site_name" content="{{ sitename }}" />
+		<meta name="og:locale" content="en_ZA" />
+		<meta name="og:video" content="{{ SiteVideoUrl }}" />
+		<!-- Facebook Meta -->
+        <meta name="fb:admins" content="{{ FacebookUserID }}" />
+		<meta name="fb:app_id" content="{{ FacebookAppID }}" />
+		<meta property="article:publisher" content="{{ facebookurl }}" />
+		<meta property="article:author" content="{{ facebookauthorurl }}" />
+		<!-- Site Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="{{siteurl}}/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="{{siteurl}}/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="{{siteurl}}/favicon-16x16.png" />
+		<link rel="manifest" href="{{siteurl}}/manifest.json" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="msapplication-TileImage" content="{{ siteurl }}/mstile-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+		<link rel="author" href="{{ siteurl }}/humans.txt" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{siteurl}}css/styles.css" />
+		{% if contact == 'true' %}
+		{% endif %}
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <div class="site-container">
+			<div class="page-titleseo">
+			<h1>{{ pagetitle }}  {{ PageDescription }}</h1>
+				<p>{{ pagetitle }}  {{ PageDescription }}</p>
+			</div>
+
+

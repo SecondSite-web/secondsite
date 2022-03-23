@@ -1,0 +1,44 @@
+{% macro input(name, label, placeholder = null, options = []) %}
+    <div class="form-group {{ options.class }}">
+        <input placeholder="{{ placeholder }}" type="{{ name == 'email' ? 'email' : 'text' }}" class="form-control" id="{{ name }}" name="{{ name }}" {{ options.require }}>
+    </div>
+{% endmacro input %}
+
+{% macro inputLabelled(name, label, placeholder = null, options = []) %}
+    <div class="form-group {{ options.class }}">
+        <label for="{{ name }}">{{ label }}</label>
+        <input placeholder="{{ placeholder }}" type="{{ name == 'email' ? 'email' : 'text' }}" class="form-control" id="{{ name }}" name="{{ name }}" {{ options.require }}>
+    </div>
+{% endmacro inputLabelled %}
+
+{% macro inputAppend(name, label, placeholder = null, options = []) %}
+    <div class="input-group mb-3 {{ options.class }}">
+        <input placeholder="{{ placeholder }}" type="{{ name == 'email' ? 'email' : 'text' }}" class="form-control" id="{{ name }}" name="{{ name }}" {{ options.require }}>
+		<div class="input-group-append">
+            <span class="input-group-text">{{ placeholder }}</span>
+        </div>    
+    </div>
+{% endmacro inputAppend %}
+
+{% macro inputPrepend(name, label, placeholder = null, options = []) %}
+    <div class="input-group mb-3 {{ options.class }}">
+        <div class="input-group-prepend">
+            <span class="input-group-text">{{ placeholder }}</span>
+        </div>
+        <input placeholder="{{ placeholder }}" type="{{ name == 'email' ? 'email' : 'text' }}" class="form-control" id="{{ name }}" name="{{ name }}" {{ options.require }}>  
+    </div>
+{% endmacro inputPrepend %}
+
+{% macro textarea(name, label, placeholder = null, options = []) %}
+    <div class="form-group {{ options.class }}">
+        <label for="{{ name }}">{{ label }}</label>
+        <textarea type="text" class="form-control" id="{{ name }}" name="{{ name }}"></textarea>
+    </div>
+{% endmacro textarea %}
+
+
+
+
+
+
+

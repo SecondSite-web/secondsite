@@ -1,0 +1,62 @@
+{% extends 'sb_index.twig' %}
+  {% block head %}
+      <link href="{{ site.url }}vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  {%  endblock %}
+  {% block body %}
+
+      <!-- DataTales Example -->
+      <div class="card shadow mb-4">
+          <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">User Accounts Table</h6>
+          </div>
+          <div class="card-body" id="usertbl">
+            <div class="alerts"></div>
+              <div class="table-responsive">
+                  <table id="user_data" class="table table-responsive table-striped">
+                    
+                      <thead>
+                      <tr>
+                          <th>{{ thead.0|capitalize|escape }}</th>
+                          <th>{{ thead.1|capitalize|escape }}</th>
+                          <th>Active 1/0</th>
+                          <th>{{ thead.4|capitalize|escape }}</th>
+                          <th>{{ thead.5|capitalize|escape }}</th>
+                          <th>{{ thead.6|capitalize|escape }}</th>
+                          <th>Registration Date</th>
+                          <th>Delete User</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      {% for r in tbody %}
+                          <tr>
+                              <td>{{ r.id|capitalize|escape }}</td>
+                              <td contenteditable id="{{ thead.1 }}">
+                                <div contenteditable class="update" data-id="{{ r.id }}" data-column="{{thead.1}}">
+                                <a href="mailto:{{ r.email|escape }}">{{ r.email|escape }}</a></div></td>
+                              <td contenteditable id="{{ thead.2 }}">{{ r.isactive|capitalize|escape }}</td>
+                              <td contenteditable id="{{ thead.4 }}">{{ r.firstname|capitalize|escape }}</td>
+                              <td contenteditable id="{{ thead.5 }}">{{ r.lastname|capitalize|escape }}</td>
+                              <td contenteditable id="{{ thead.6 }}">{{ r.userrole|capitalize|escape }}</td>
+                              <td contenteditable id="{{ thead.7 }}">{{ r.dt|escape }}</td>
+                              <td>
+                                <form id="force-delete-form" action="{{ site.admin }}php/delete-user.php" method="post" role="form">
+                                  <input style="display:none; visibility:hidden;" type="text" class="hidden" id="id" name="id" value="{{ r.id|escape }}" placeholder="{{ r.id|escape }}" required="required">
+                                  <button type="submit" id="submit" class="btn btn-sm btn-success btn-send">Delete User</button>
+                                  <div class="messages"></div>
+                                </form>
+                              </td>
+                          </tr>
+                      {% endfor %}
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  {% endblock %}
+{% block scripts %}
+    <script src="{{ site.url }}vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ site.url }}vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ site.url }}twig/js/demo/datatables-demo.js"></script>
+    <script type="text/javascript" src="{{ site.url }}twig/tbl/ajax.js"></script>
+    {# <script type="text/javascript" src="{{ siteurl }}twig/js/delete-user.js"></script> #}
+{% endblock %}

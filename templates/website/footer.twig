@@ -1,0 +1,89 @@
+</div> <!-- site-container -->
+<footer>
+	<div class="footer-inner container">
+		<div class="row">
+			<div class="col">
+				<h5>Navigation Links</h5>
+				<ul class="list-unstyled">
+					<li><a href="{{siteurl}}">Home</a></li>
+					<li><a href="{{siteurl}}/website-design/">Website Design</a></li>
+					<li><a href="{{siteurl}}/database-design/">Database Design</a></li>
+					<li><a href="{{siteurl}}/domain-name/">Domains</a></li>
+					<li><a href="{{siteurl}}/hosting/">Hosting</a></li>
+					<li><a href="{{siteurl}}/website-management/">Managed Websites</a></li>
+					<li><a href="{{siteurl}}/online-marketing/">Online Marketing</a></li>
+					<li><a href="{{siteurl}}/ssl-certificates/">SSl Certificates</a></li>
+					<li><a href="{{siteurl}}/seo-search-engine-optimisation/">SEO</a></li>
+					<li><a href="{{siteurl}}/contact-us/">Contact Us</a></li>
+				</ul>
+
+			</div>
+			<div class="col">
+				<h5>Website Use & Info</h5>
+				<ul class="list-unstyled">
+					<li><a rel="nofollow" href="http://www.icann.org/en/resources/registrars/registrant-rights/educational/" target="_blank">Registrant Education</a></li>
+					<li><a rel="nofollow" href="http://www.icann.org/en/resources/registrars/registrant-rights/benefits/" target="_blank">Domain Name Registrant Rights</a></li>
+					<li><a href="{{ siteurl }}/privacy-policy/" title="Privacy Policy" target="_blank">Privacy Policy</a></li>
+					<li><a href="{{ siteurl }}/acceptable-use-policy/" title="Acceptable Use Policy" target="_blank">Acceptable Use Policy</a></li>
+					<li><hr /></li>
+					<li>Report conerns to:</li>
+					<li><a href="mailto:abuse@secondsite.xyz"> abuse@secondsite.xyz</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h5>Contact Info</h5>
+				<ul class="list-unstyled">
+					<li><a href=" mailto:info@secondsite.xyz">info@secondsite.xyz</a></li>
+					<li>+27 (0) 79 995 9818</li>
+					<li><a href="{{ siteurl }}/contact-us/">Contact Form</a> </li>
+					<li><hr /></li>
+				</ul>
+				<ul class="list-inline">
+					<li class="list-inline-item"><span class="social-pic"><a href="{{ facebookurl|e }}" rel="nofollow" target="_blank"><div id="facebook-icon"><img src="{{ siteurl }}/images/facebook-with-circle.svg" alt="{{ alt }}" /></div></a></span></li>
+					<li class="list-inline-item"><span class="social-pic"><a href="{{ twitterurl|e }}" rel="nofollow" target="_blank"><div id="twitter-icon"><img src="{{ siteurl }}/images/twitter-with-circle.svg" alt="{{ alt2 }}" /></div></a></span></li>
+					<li class="list-inline-item"><span class="social-pic"><a href="{{ instagramurl|e }}" rel="nofollow" target="_blank"><div id="instagram-icon"><img src="{{ siteurl }}/images/instagram-with-circle.svg" alt="{{ alt3 }}" /></div></a></span></li>
+                    <li class="list-inline-item"><span class="social-pic"><a href="{{ linkedinurl|e }}" rel="nofollow" target="_blank"><div id="linkedin-icon"><img src="{{ siteurl }}/images/linkedin-with-circle.svg" alt="{{ alt4 }}" /></div></a></span></li>
+					<li class="list-inline-item"><span class="social-pic"><a href="{{ pinteresturl|e }}" rel="nofollow" target="_blank"><div id="pinterest-icon"><img src="{{ siteurl }}/images/pinterest-with-circle.svg" alt="{{ alt5 }}" /></div></a></span></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p>Copyright © {{ year }} {{ sitename }}. All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#" class="btn btn-primary btn-sm back-to-top move-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+	<img src="{{ siteurl }}/images/chevron-thin-up.svg" alt="{{ alt4 }}" />
+</a>
+
+</div><!-- container from head -->
+		<script type="text/javascript" src="{{siteurl}}/js/vendor/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="{{ siteurl }}/js/vendor/popper.min.js"></script>
+        <script type="text/javascript" src="{{ siteurl }}/js/vendor/bootstrap.min.js"></script>
+		<script type="text/javascript" src="{{ siteurl }}/js/vendor/scrollreveal.min.js"></script>
+		<script type="text/javascript" src="{{siteurl}}/js/site-dist.js"></script>
+	{% if home == 'true' %}
+		<script type="text/javascript" src="{{siteurl}}/js/custom-dist.js"></script>
+	{% elseif contact == 'true' %}
+		<script type="text/javascript" src="{{siteurl}}/js/validator.min.js"></script>
+		<script type="text/javascript" src="{{siteurl}}/js/form-scripts.js"></script>
+	{% elseif marketing == 'true' %}
+		<script type="text/javascript" src="{{siteurl}}/js/vendor/jquery.connections-dist.js"></script>
+		<script type="text/javascript" src="{{siteurl}}/js/marketing-custom-dist.js"></script>
+	{% endif %}
+		<script src="{{ siteurl }}/js/vendor/ie10-viewport-bug-workaround-dist.js"></script>
+		<script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','{{ analyticstag }}','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	</body>
+</html>
